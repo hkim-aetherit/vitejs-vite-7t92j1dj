@@ -1,35 +1,65 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useEffect, useState } from 'react';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from 'react-router-dom';
+import { Main } from './components/Main';
+import { VideoChat } from './components/VideoChat';
+import { WelcomePage } from './components/WelcomePage';
 
-function App() {
-  const [count, setCount] = useState(0)
+const AUTH_KEY = 'isAuthenticated';
+
+function AppContent() {
+  const [isAuthenticated, setIsAuthenticated] = useState(() => {
+    return localStorage.getItem(AUTH_KEY) === 'true';
+  });
+
+  useEffect(() => {
+    localStorage.setItem(AUTH_KEY, isAuthenticated.toString());
+  }, [isAuthenticated]);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <Routes>
+      <Route
+        path="/main"
+        element={
+          isAuthenticated ? (
+            <Main
+              onLogin={() => setIsAuthenticated(true)}
+              onLogout={() => setIsAuthenticated(false)}
+            />
+          ) : (
+            <Navigate to="/" replace />
+          )
+        }
+      />
+      <Route
+        path="/talk/:id"
+        element={isAuthenticated ? <VideoChat /> : <Navigate to="/" replace />}
+      />
+      <Route
+        path="/"
+        element={
+          isAuthenticated ? (
+            <Navigate to="/main" replace />
+          ) : (
+            <WelcomePage
+              isAuthenticated={isAuthenticated}
+              onAuthenticate={() => setIsAuthenticated(true)}
+            />
+          )
+        }
+      />
+    </Routes>
+  );
 }
 
-export default App
+export default function App() {
+  return (
+    <Router>
+      <AppContent />
+    </Router>
+  );
+}

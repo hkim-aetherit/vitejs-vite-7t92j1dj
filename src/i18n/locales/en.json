@@ -1,0 +1,190 @@
+{
+  "common": {
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "name": "Name",
+    "login": "Login",
+    "register": "Register",
+    "backToLogin": "Back to Login",
+    "friends": "Friends List",
+    "logout": "Logout",
+    "call": "Call",
+    "settings": "Settings",
+    "save": "Save",
+    "saving": "Saving...",
+    "saved": "Saved!",
+    "delete": "Delete",
+    "deleteAll": "Delete All",
+    "deleting": "Deleting...",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "selectAll": "Select All",
+    "selectedDelete": "Delete Selected",
+    "theme": {
+      "dark": "Dark Mode",
+      "light": "Light Mode"
+    },
+    "settings": {
+      "title": "User Settings",
+      "profile": "Profile",
+      "subscription": "Subscription",
+      "history": "History",
+      "currentPlan": "Current Plan",
+      "remainingTime": "Remaining Time",
+      "purchase": "Purchase",
+      "purchasing": "Purchasing...",
+      "selectPlan": "Select Plan",
+      "subscriptionHistory": "Subscription History",
+      "active": "Active",
+      "unused": "Unused",
+      "expired": "Expired",
+      "chatHistory": "Chat History",
+      "deleteHistoryConfirm": "Are you sure you want to delete this history item?",
+      "deleteAllHistoryConfirm": "Are you sure you want to delete all history items?",
+      "deleteSubscriptionConfirm": "Are you sure you want to delete this subscription history?",
+      "noHistory": "No history items",
+      "refund": "Refund",
+      "refundRequest": "Refund Request",
+      "requestRefund": "Request Refund",
+      "requestingRefund": "Requesting...",
+      "refundDescription": "Would you like to request a refund for this subscription?",
+      "refundWarning": "Only unused subscriptions within 7 days of purchase are eligible for refund.",
+      "devices": "Device Settings",
+      "camera": "Camera",
+      "microphone": "Microphone"
+    },
+    "search": {
+      "friends": "Search friends...",
+      "chat": "Search chats..."
+    },
+    "participants": "{{count}} participants",
+    "online": "online",
+    "offline": "offline",
+    "registrationSuccess": "Registration Successful!",
+    "checkEmail": "Please check your email to complete the registration process.",
+    "registering": "Registering...",
+    "loggingIn": "Logging in...",
+    "loginFailed": "Login failed. Please check your email and password.",
+    "rememberMe": "Remember me",
+    "rememberMeWarning": "Only use this option on your personal devices",
+    "error": {
+      "title": "Error",
+      "loginFailed": "Login failed. Please check your email and password.",
+      "invalidCredentials": "Invalid credentials",
+      "emailExists": "Email already exists",
+      "nameExists": "Username already exists",
+      "registrationFailed": "Registration failed",
+      "passwordResetFailed": "Password reset failed",
+      "addFriendFailed": "Failed to add friend",
+      "createRoomFailed": "Failed to create chat room",
+      "joinRoomFailed": "Failed to join chat room",
+      "purchaseFailed": "Purchase failed",
+      "refundFailed": "Refund request failed",
+      "updateProfileFailed": "Failed to update profile",
+      "unknown": "An unknown error occurred"
+    },
+    "passwordReset": {
+      "title": "Reset Password",
+      "description": "Enter your email address and we'll send you a link to reset your password.",
+      "link": "Forgot password?",
+      "submit": "Send Reset Link",
+      "sending": "Sending...",
+      "emailSent": "Email Sent!",
+      "checkEmail": "Please check your email for password reset instructions."
+    },
+    "addFriend": "Add Friend",
+    "friendEmail": "Friend's Email",
+    "add": "Add",
+    "adding": "Adding...",
+    "verifying": "Verifying...",
+    "join": "Join",
+    "friendsList": {
+      "allFriends": "All Friends",
+      "sentInvites": "Sent Invites",
+      "receivedInvites": "Received Invites",
+      "accept": "Accept",
+      "decline": "Decline",
+      "cancel": "Cancel",
+      "pending": "Pending",
+      "noFriends": "No friends yet",
+      "noSentInvites": "No sent invites",
+      "noReceivedInvites": "No received invites"
+    },
+    "chat": {
+      "title": "Public Chat",
+      "create": "Create Room",
+      "createRoom": "Create New Chat Room",
+      "roomName": "Name",
+      "usePassword": "Use Password",
+      "creating": "Creating...",
+      "join": "Join",
+      "noResults": "No results found",
+      "waiting": "Waiting...",
+      "waitingCount": "Currently {{count}} people waiting",
+      "typeMessage": "Type a message...",
+      "send": "Send"
+    }
+  },
+  "welcome": {
+    "appName": "TalkPle",
+    "hero": {
+      "title1": "Welcome to",
+      "title2": "TalkPle",
+      "description": "Connect with friends, join public chats, and enjoy seamless video calls in one unified platform.",
+      "getStarted": "Get Started",
+      "install": "Install App"
+    },
+    "features": {
+      "subtitle": "Features",
+      "title": "Everything you need to stay connected",
+      "video": {
+        "title": "Video Calls with Friends",
+        "description": "Crystal clear video calls with your friends, including screen sharing capabilities."
+      },
+      "chat": {
+        "title": "Public Chat Rooms",
+        "description": "Join public chat rooms to meet new people and discuss shared interests."
+      }
+    },
+    "stats": {
+      "title": "Trusted by users worldwide",
+      "activeUsers": "Active Users",
+      "messagesPerDay": "Messages/Day",
+      "countries": "Countries"
+    },
+    "cta": {
+      "title": "Ready to dive in?",
+      "subtitle": "Login now",
+      "getStarted": "Get started"
+    },
+    "footer": {
+      "company": "TalkPle",
+      "address": "123 Communication Street, Digital City, DC 12345",
+      "phone": "+1 (555) 123-4567",
+      "rights": "© 2024 TalkPle. All rights reserved."
+    }
+  },
+  "placeholders": {
+    "email": "Enter your email",
+    "password": "Enter your password",
+    "confirmPassword": "Enter your password again",
+    "name": "Enter a nickname to use in the app (not your real name)",
+    "friendEmail": "Enter your friend's email address",
+    "roomName": "Enter room name",
+    "roomPassword": "Enter room password"
+  },
+  "validation": {
+    "required": "This field is required",
+    "email": "Please enter a valid email address",
+    "password": {
+      "min": "Password must be at least 8 characters",
+      "match": "Passwords do not match",
+      "incorrect": "Incorrect password"
+    },
+    "name": {
+      "min": "Name must be at least 2 characters",
+      "max": "Name cannot exceed 50 characters"
+    }
+  }
+}
